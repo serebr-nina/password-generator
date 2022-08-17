@@ -21,23 +21,23 @@ var generateBtn = document.querySelector("#generate");
 function writePassword() {
   
   var passwordLength = window.prompt("Choose password length between 8 and 128 characters long.");
-  // handle cancel button
+  // Handle cancel button
   if (passwordLength === null) {
     return;
   }
   
   var isNotNumber = isNaN(passwordLength);
   while (isNotNumber) {
-    passwordLength = window.prompt("Invalid entry. Choose password length between 8 and 128 characters long");
-    // handle cancel button
+    passwordLength = window.prompt("Invalid entry. Choose password length between 8 and 128 characters long.");
+    // Handle cancel button
     if (passwordLength === null) {
       return;
     }
     isNotNumber = isNaN(passwordLength);
   } 
   while (passwordLength < 8 || passwordLength > 128 ){
-    passwordLength = window.prompt("Invalid entry. Choose password length between 8 and 128 characters long");
-    // handle cancel button
+    passwordLength = window.prompt("Invalid entry. Choose password length between 8 and 128 characters long.");
+    // Handle cancel button
     if (passwordLength === null) {
       return;
     }
@@ -97,7 +97,6 @@ function generatePassword(passwordLength, passwordType1, passwordType2, password
   if (passwordType4 == "yes") {
     characters += symbols;
   }
-  console.log(characters)
 
   for (var i = 0; i < passwordLength; i++) {
     password += characters.charAt(
