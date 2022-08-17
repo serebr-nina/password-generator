@@ -2,7 +2,7 @@
 
 ## Purpose
 A password generating tool.
-<img src="./assets/app_screenshot.png" alt="web page screenshot" height="400" />
+<img src="./Assets/app_screenshot.png" alt="web page screenshot" height="150" />
 
 ## Built With
 * HTML
